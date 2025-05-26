@@ -10,12 +10,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
 <body>
-    <div class="accent-bar"></div>
-    <header>
+     {% if show_nav_bar == True %}
+     <header>
+        <nav>
+            <p>[Navigation bar here]</p>
+        </nav>
     </header>
+     {% endif %}
+    
     <main>
         {% block content %}
         {% endblock %}
     </main>
+    <footer>
+            <p>&copy; 2025 Jared. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+<script>
+  history.replaceState(null, null, location.href);
+</script>

@@ -14,7 +14,7 @@ h2 {
     width: 90%;
     max-width: 500px;
     margin: auto;
-    height: 100dvh;
+    height: 90dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,6 +64,14 @@ form > input, form > select {
     color: #323232;
 }
 
+nav > p {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 input[type='submit'] {
     background-color: transparent;
     border: 1px solid #353535;
@@ -71,6 +79,7 @@ input[type='submit'] {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    height: 35px;
     margin-top: 10px;
     transition: all .25s ease-in-out;
 }
@@ -106,13 +115,11 @@ input[type='submit']:hover {
     background-color: #353535;
 }
 
-/* Dashboard Styles - Add to your existing CSS */
-
 .dashboard-container {
     width: 90%;
     max-width: 600px;
     margin: auto;
-    min-height: 100dvh;
+    min-height: 90dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,6 +188,14 @@ input[type='submit']:hover {
     text-decoration: none;
 }
 
+footer {
+    background-color: #353535;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 30px 5px;
+}
+
 @media (max-width: 600px) {
     .dashboard-container {
         width: 95%;
@@ -205,6 +220,10 @@ input[type='submit']:hover {
     
     .user-info table td:first-child {
         width: 40%;
+    }
+    
+    nav > p, footer {
+        font-size: 0.85rem;
     }
 }
 

@@ -115,7 +115,8 @@ def login():
 @app.route('/dashboard')
 @login_required
 def dashboard():
-    return render_template('dashboard.html', user=get_user_by_id(session['user_id']))
+    user = get_user_by_id(session['user_id'])
+    return render_template('dashboard.html', user=user, show_nav_bar=True)
 
 @app.route('/logout')
 @login_required
